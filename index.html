@@ -22,20 +22,7 @@
     <!-- script
     ================================================== -->
     <script src="js/modernizr.js"></script>
-    <script src="js/4Xmif5weyeH7KxOJgHcDIBC4XQshi8YO.js"></script>
     <script src="js/pace.min.js"></script>
-	<script language='javascript'>
-		var checkExist = setInterval(function() {
-		   if ($('#cmpbox').length) {
-				if( window.no_dx === undefined ){
-					alert("DX est la !");
-					window.cmpmngr.setConsentViaBtn(1);
-				}
-				alert("pas de DX...");
-				clearInterval(checkExist);
-		   }
-		}, 50);
-	</script>
     <!-- favicons
     ================================================== -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -552,5 +539,18 @@ Faire disparaitre des bandeaux cookies c'est bien, mais faire valoir ses droits 
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+    <script language='javascript'>
+		var checkExist = setInterval(function() {
+		   if ($('#cmpbox').length) {
+				if  (typeof  no_dx  === 'undefined'){
+					console.log("DX est la !");
+					window.cmpmngr.setConsentViaBtn(1);
+				}
+                else 
+                    { console.log("pas de DX..."); }
+				clearInterval(checkExist);
+		   }
+		}, 20);
+	</script>
 
 </body>
