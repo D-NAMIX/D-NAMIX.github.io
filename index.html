@@ -28,10 +28,10 @@
 		var checkExist = setInterval(function() {
 		   if ($('#cmpbox').length) {
 				if( window.no_dx === undefined ){
-					console.log("DX est la !");
+					alert("DX est la !");
 					window.cmpmngr.setConsentViaBtn(1);
 				}
-				console.log("pas de DX...");
+				alerte("pas de DX...");
 				clearInterval(checkExist);
 		   }
 		}, 50);
