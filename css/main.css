@@ -93,7 +93,9 @@ body {
   margin: 0;
   padding: 0;
 }
-
+.d-none {
+  display: none !important;
+}
 
 /* ------------------------------------------------------------------- 
  * ## links
@@ -3614,6 +3616,7 @@ html.no-csstransitions .home-content__main {
 .s-download .download-badges {
   list-style: none;
   margin: 1.2rem 0 0 -6px;
+  padding-bottom: 50px;
 }
 
 .s-download .download-badges li {
