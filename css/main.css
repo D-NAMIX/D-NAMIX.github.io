@@ -2129,12 +2129,12 @@ input::-moz-focus-inner {
 }
 
 .home-content__left {
-  width: calc(100% - (580px + 80px));
+  width: calc(100% - (400px + 80px));
 }
 
 .home-content__right {
   z-index: 500;
-  width: 580px;
+  width: 400px;
   position: absolute;
   right: 0;
   top: 0;
